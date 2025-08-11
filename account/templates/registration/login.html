@@ -11,7 +11,7 @@
  <p>Please, use the following form to log-in:</p>
  {% endif %}
  <div class="login-form">
- <form action="{% url 'account:login' %}" method="post">
+ <form action="{% url 'login' %}" method="post">
  {{ form.as_p }}
  {% csrf_token %}
  <input type="hidden" name="next" value="{{ next }}" />
